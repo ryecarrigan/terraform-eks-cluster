@@ -201,8 +201,6 @@ resource "aws_security_group_rule" "bastion_ingress" {
   type              = "ingress"
 }
 
-data "aws_region" "current" {}
-
 data "aws_ami" "nat" {
   most_recent = true
   owners      = ["amazon"]
