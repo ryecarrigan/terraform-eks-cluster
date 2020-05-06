@@ -13,15 +13,15 @@ variable "eks_version" {
 
 variable "extra_tags" {
   default = {}
-  type    = "map"
+  type    = map(string)
 }
 
 variable "private_subnet_ids" {
-  type = "list"
+  type = list(string)
 }
 
 variable "public_subnet_ids" {
-  type = "list"
+  type = list(string)
 }
 
 variable "ssh_cidr" {}
