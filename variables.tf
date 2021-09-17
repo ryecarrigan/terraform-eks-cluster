@@ -8,7 +8,7 @@ variable "bastion_key_name" {
 
 variable "cluster_name" {}
 variable "eks_version" {
-  default = "1.15"
+  default = "1.19"
 }
 
 variable "extra_tags" {
